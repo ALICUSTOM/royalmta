@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>رویال ام تی ای | Royal MTA</title>
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;800;900&display=swap">
+<style>
+:root{--k:#0a0a0a;--g:#151515;--l:#333;--o:#ff5500;--y:#ffc400;--t:#fff;--m:#a8a8a8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--k);color:var(--t);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+::selection{background:var(--o);color:#000}
+.w{max-width:1120px;margin:auto;padding:0 20px}
+header{position:fixed;top:0;inset-inline:0;z-index:50;background:#000;border-bottom:3px solid var(--o);padding-top:env(safe-area-inset-top,0)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:900;font-size:19px;display:flex;align-items:center;gap:10px}
+.logo i{width:34px;height:34px;background:var(--o);color:#000;display:grid;place-items:center;font-style:normal;font-size:20px}
+nav{display:flex;gap:2px;align-items:center}
+nav a{padding:6px 12px;font-size:14px;font-weight:800;color:#ddd}
+nav a:hover{background:var(--o);color:#000}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-weight:900;font-size:16px;padding:12px 28px;background:var(--o);color:#000;border:2px solid #000;box-shadow:5px 5px 0 #fff;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 #fff}
+.btn:active{transform:translate(4px,4px);box-shadow:1px 1px 0 #fff}
+.btn.g{background:#000;color:#fff;border-color:#fff;box-shadow:5px 5px 0 var(--o)}
+.btn.g:hover{box-shadow:8px 8px 0 var(--o)}
+.btn.g:active{box-shadow:1px 1px 0 var(--o)}
+#bg{display:none;background:var(--o);color:#000;border:0;width:44px;height:44px;font-size:22px;font-weight:900;cursor:pointer}
+.hero{position:relative;overflow:hidden;min-height:100vh;display:flex;align-items:center;padding:120px 0 110px;clip-path:polygon(0 0,100% 0,100% 94%,0 100%)}
+.hero::before{content:"";position:absolute;inset:-60px;background:repeating-linear-gradient(135deg,#0a0a0a 0 30px,#121212 30px 60px);animation:mv 5s linear infinite}
+@keyframes mv{to{transform:translateX(85px)}}
+.hero .w{position:relative;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:10px;background:#000;border:2px solid var(--y);padding:4px 18px;font-weight:800;font-size:14px;color:var(--y);margin-bottom:24px}
+.dot{width:10px;height:10px;background:#2be36b;animation:bl 1.2s steps(2) infinite}
+@keyframes bl{50%{opacity:.2}}
+h1{font-weight:900;line-height:.92;font-size:clamp(70px,17vw,210px);direction:ltr;letter-spacing:-2px}
+h1 span{display:block;animation:in .7s cubic-bezier(.2,.8,.2,1) both}
+h1 .a{color:#fff;text-shadow:7px 7px 0 var(--o)}
+h1 .b{color:var(--o);text-shadow:7px 7px 0 #fff;animation-delay:.15s}
+@keyframes in{from{opacity:0;transform:translateY(50px)}}
+.sub{color:#ddd;max-width:560px;margin:26px auto 34px;font-size:17px;font-weight:500}
+.ip{display:inline-flex;direction:ltr;border:3px solid #fff;background:#000;box-shadow:8px 8px 0 var(--o)}
+.ip code{padding:12px 24px;font-size:22px;font-weight:900;color:var(--y);letter-spacing:1px}
+.ip button{border:0;background:var(--o);color:#000;font-weight:900;padding:0 22px;cursor:pointer;font-size:14px}
+.ip button:hover{background:var(--y)}
+.cta{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.mq{background:var(--o);color:#000;overflow:hidden;direction:ltr;padding:10px 0;margin:-34px -3% 0;transform:rotate(-1.5deg);position:relative;z-index:2;border-block:3px solid #000}
+.mq div{display:flex;gap:40px;width:max-content;animation:mq 22s linear infinite;font-weight:900;font-size:24px;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:80px 0;content-visibility:auto;contain-intrinsic-size:auto 600px}
+.hd{margin-bottom:38px}
+.hd h2{display:inline-block;background:var(--o);color:#000;padding:0 18px;font-size:clamp(26px,5vw,40px);font-weight:900;line-height:1.5;box-shadow:6px 6px 0 #fff}
+.hd p{color:var(--m);margin-top:14px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.st{background:var(--g);border:3px solid #fff;padding:24px;text-align:center;box-shadow:6px 6px 0 var(--o)}
+.st:nth-child(odd){background:var(--o);color:#000;border-color:#000;box-shadow:6px 6px 0 #fff}
+.st b{display:block;font-size:48px;font-weight:900;direction:ltr;line-height:1.3}
+.st span{font-weight:800;font-size:14px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{position:relative;display:block;width:100%;text-align:right;background:var(--g);border:2px solid var(--l);border-inline-start:7px solid var(--o);padding:24px;color:inherit;font:inherit;box-shadow:6px 6px 0 #000;transition:transform .15s,box-shadow .15s,border-color .15s}
+a.card:hover,button.card:hover{transform:translate(-4px,-4px);box-shadow:10px 10px 0 var(--o);border-color:var(--o)}
+button.card{cursor:pointer}
+.ic{width:54px;height:54px;background:var(--o);border:2px solid #000;display:grid;place-items:center;font-size:27px;margin-bottom:14px}
+.card h3{font-size:19px;font-weight:900}
+.card p{color:var(--m);font-size:14px}
+.tag{position:absolute;top:14px;left:14px;font-size:12px;font-weight:900;background:var(--y);color:#000;padding:0 10px}
+.steps{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));counter-reset:s}
+.sp{counter-increment:s;overflow:hidden}
+.sp::after{content:counter(s);position:absolute;left:14px;bottom:-22px;font-size:120px;font-weight:900;color:#1f1f1f;line-height:1}
+.chip{position:relative;z-index:1;display:inline-block;margin:12px 0 0 8px;padding:4px 16px;border:2px solid var(--y);font-size:13px;font-weight:800;color:var(--y);background:#000;cursor:pointer}
+.chip:hover{background:var(--y);color:#000}
+.tl{padding-right:30px;border-right:4px solid var(--o)}
+.tl .it{position:relative;margin-bottom:28px}
+.tl .it::before{content:"";position:absolute;right:-41px;top:9px;width:16px;height:16px;background:var(--y);border:3px solid #000}
+.tl small{color:var(--y);font-weight:900}
+.tl h3{font-size:19px;font-weight:900}.tl p{color:var(--m);font-size:14px}
+.av{width:64px;height:64px;background:var(--y);border:2px solid #000;display:grid;place-items:center;font-weight:900;color:#000;font-size:26px;margin-bottom:12px}
+details{background:var(--g);border:2px solid var(--l);margin-bottom:14px}
+details[open]{border-color:var(--o);box-shadow:5px 5px 0 var(--o)}
+summary{cursor:pointer;padding:16px 22px;font-weight:900;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:28px;color:var(--o);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 22px 18px;color:var(--m);font-size:14px}
+.cnt{background:var(--o);color:#000;border:3px solid #fff;box-shadow:10px 10px 0 #fff;padding:54px 24px;text-align:center}
+.cnt h2{font-size:clamp(26px,5vw,42px);font-weight:900}.cnt p{font-weight:800;margin:6px 0 26px}
+.soc{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:26px}
+.cnt .btn{background:#000;color:#fff;border-color:#000;box-shadow:5px 5px 0 #fff}
+.cnt .btn.g{background:var(--o);color:#000;border-color:#000;box-shadow:5px 5px 0 #000}
+.md{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:100;display:grid;place-items:center;visibility:hidden;opacity:0;transition:opacity .2s,visibility .2s;padding:20px}
+.md.on{visibility:visible;opacity:1}
+.bx{background:var(--g);border:3px solid var(--o);padding:32px;width:100%;max-width:400px;box-shadow:10px 10px 0 var(--o);transform:translateY(20px);transition:transform .2s}
+.md.on .bx{transform:none}
+.bx h3{font-size:24px;font-weight:900;margin-bottom:18px}
+.bx input{width:100%;background:#000;border:2px solid var(--l);color:#fff;padding:12px 16px;margin-bottom:14px;font:inherit}
+.bx input:focus{border-color:var(--o);outline:0}
+.bx .btn{width:100%}
+.x{background:none;border:0;color:#fff;float:left;font-size:26px;cursor:pointer;line-height:1}
+#tt{position:fixed;bottom:26px;left:50%;transform:translate(-50%,140px);background:var(--y);color:#000;font-weight:900;padding:10px 24px;border:3px solid #000;box-shadow:5px 5px 0 #fff;z-index:200;transition:transform .25s;max-width:92vw;text-align:center}
+#tt.on{transform:translate(-50%,0)}
+footer{background:#000;border-top:3px solid var(--o);padding:34px 0;text-align:center;color:var(--m);font-size:13px;font-weight:500}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .5s,transform .5s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+ #bg{display:block}
+ nav{position:fixed;top:69px;inset-inline:0;background:#000;flex-direction:column;padding:12px;border-bottom:3px solid var(--o);transform:translateY(-130%);transition:transform .25s;gap:4px;visibility:hidden}
+ nav.on{transform:none;visibility:visible}
+ nav a{width:100%;text-align:center;padding:12px}
+ .ip code{font-size:17px;padding:10px 14px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+</head>
+<body data-ip="5.57.35.170">
+
+<header><div class="w">
+  <a class="logo" href="#top"><i>R</i>ROYAL MTA | رویال ام تی ای</a>
+  <nav id="nv">
+    <a href="#access">دسترسی سریع</a><a href="#features">امکانات</a><a href="#news">اخبار</a><a href="#how">شروع بازی</a><a href="#faq">سوالات</a><a href="#support">پشتیبانی</a>
+    <button class="btn" data-open="login" type="button" style="margin-right:10px;padding:6px 18px;font-size:14px">ورود به UCP</button>
+  </nav>
+  <button id="bg" type="button" aria-label="منو" aria-expanded="false">☰</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+  <div class="pill"><span class="dot"></span>سرور آنلاین است</div>
+  <h1><span class="a">ROYAL</span><span class="b">MTA</span></h1>
+  <p class="sub">سرور رول‌پلی ایرانی با اقتصاد واقعی، سیستم‌های اختصاصی و جامعه‌ای فعال. همین الان وارد شهر شوید.</p>
+  <div class="ip"><button class="js-copy" type="button">کپی آیپی</button><code data-ip-text>5.57.35.170</code></div>
+  <div class="cta">
+    <a class="btn" href="mtasa://5.57.35.170" data-ip-link>ورود مستقیم به سرور</a>
+    <a class="btn g" href="#how">راهنمای شروع</a>
+  </div>
+</div></div>
+
+<div class="mq" aria-hidden="true"><div id="mqi"></div></div>
+
+<section><div class="w">
+  <div class="stats rv">
+    <div class="st"><b data-n="1250" data-s="+">0</b><span>بازیکن ثبت‌نام‌شده</span></div>
+    <div class="st"><b data-n="نامشخص" data-s="">0</b><span>ظرفیت آنلاین</span></div>
+    <div class="st"><b data-n="40" data-s="+">0</b><span>سیستم اختصاصی</span></div>
+    <div class="st"><b data-n="99" data-s="%">0</b><span>آپتایم سرور</span></div>
+  </div>
+</div></section>
+
+<section id="access"><div class="w">
+  <div class="hd rv"><h2>دسترسی سریع</h2><p>همه‌ی ابزارهای بازیکنان در یک‌جا</p></div>
+  <div class="grid">
+    <button class="card rv" data-open="login" type="button"><div class="ic">👤</div><h3>پنل UCP</h3><p>مدیریت حساب، کاراکتر و دارایی‌ها</p></button>
+    <a class="card rv" href="#faq"><span class="tag">مهم</span><div class="ic">📜</div><h3>قوانین سرور</h3><p>قبل از ورود قوانین را بخوانید</p></a>
+    <a class="card rv" href="#" data-t="لینک توکن را در فایل قرار دهید"><div class="ic">🔑</div><h3>توکن</h3><p>دریافت و مدیریت توکن ورود</p></a>
+    <a class="card rv" href="#" data-t="لینک آپلود سنتر را در فایل قرار دهید"><div class="ic">⬆️</div><h3>آپلود سنتر</h3><p>آپلود تصویر و مدارک</p></a>
+    <a class="card rv" href="#" data-t="لینک پین لاک را در فایل قرار دهید"><div class="ic">🔒</div><h3>پین لاک</h3><p>قفل امنیتی روی حساب شما</p></a>
+    <a class="card rv" href="#" data-t="لینک تغییر شماره را در فایل قرار دهید"><div class="ic">📱</div><h3>تغییر شماره تماس</h3><p>به‌روزرسانی شماره‌ی حساب</p></a>
+    <a class="card rv" href="#" data-t="لینک وضعیت سرویس را در فایل قرار دهید"><div class="ic">📡</div><h3>وضعیت سرویس</h3><p>آنلاین بودن سرور و سایت</p></a>
+  </div>
+</div></section>
+
+<section id="features"><div class="w">
+  <div class="hd rv"><h2>امکانات سرور</h2><p>هر آنچه یک رول‌پلی حرفه‌ای لازم دارد</p></div>
+  <div class="grid">
+    <div class="card rv"><div class="ic">🏙️</div><h3>شهر زنده</h3><p>مپ اختصاصی، مشاغل متنوع و شهری که همیشه فعال است.</p></div>
+    <div class="card rv"><div class="ic">💼</div><h3>مشاغل و اقتصاد</h3><p>کار قانونی یا غیرقانونی؛ اقتصادی که با تصمیم‌های شما می‌چرخد.</p></div>
+    <div class="card rv"><div class="ic">🚓</div><h3>فرکشن‌ها</h3><p>پلیس، پزشکی، مکانیک و گروه‌ها با سیستم رده‌بندی.</p></div>
+    <div class="card rv"><div class="ic">🚗</div><h3>خودرو و ملک</h3><p>خرید خودرو، خانه و کسب‌وکار با سیستم کامل مالکیت.</p></div>
+    <div class="card rv"><div class="ic">🎙️</div><h3>صدای درون‌بازی</h3><p>ارتباط صوتی برای رول‌پلی واقعی‌تر.</p></div>
+    <div class="card rv"><div class="ic">🛡️</div><h3>ضد تقلب</h3><p>تیم ادمین فعال و سیستم گزارش و پیگیری.</p></div>
+  </div>
+</div></section>
+
+<section id="news"><div class="w" style="max-width:780px">
+  <div class="hd rv"><h2>اخبار و آپدیت‌ها</h2></div>
+  <div class="tl rv">
+    <div class="it"><small>آپدیت جدید</small><h3>نسخه‌ی جدید سرور</h3><p>سیزن 1 سرور</p></div>
+    <div class="it"><small>رویداد</small><h3>رویداد ویژه‌ی بازیکنان</h3><p>کش پارتی و ایونت های جذاب</p></div>
+    <div class="it"><small>افتتاحیه</small><h3>شروع رسمی رویال ام تی ای</h3><p>شنبه / مهر /</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="w">
+  <div class="hd rv"><h2>چطور بازی کنم؟</h2><p>فقط ۳ قدم تا ورود به رویال ام تی ای</p></div>
+  <div class="steps">
+    <div class="card sp rv"><div class="ic">💿</div><h3>دانلود GTA:SA</h3><p>نسخه‌ی اورجینال بازی را دانلود و نصب کنید.</p><a class="chip" href="https://dl.iranmta.ir/cdn/GTA-San-Andreas_iranmta.ir.rar" target="_blank" rel="noopener noreferrer">دانلود مستقیم</a></div>
+    <div class="card sp rv"><div class="ic">🚀</div><h3>نصب لانچر MTA</h3><p>لانچر را نصب و پوشه‌ی GTA:SA را انتخاب کنید.</p><a class="chip" href="https://nightly.multitheftauto.com/mtasa-1.7-untested-26966-20261009.exe" target="_blank" rel="noopener noreferrer">ویندوز 10 و 11</a></div>
+    <div class="card sp rv"><div class="ic">🎮</div><h3>ورود به سرور</h3><p>آیپی را کپی کنید و در MTA وارد شوید.</p><a class="chip" href="mtasa://5.57.35.170" data-ip-link>ورود مستقیم</a><button class="chip js-copy" type="button">کپی آیپی</button></div>
+  </div>
+</div></section>
+
+<section id="team"><div class="w">
+  <div class="hd rv"><h2>تیم رویال</h2><p>نام و سمت اعضا را جایگزین کنید</p></div>
+  <div class="grid">
+    <div class="card rv"><div class="av">A</div><h3>مدیر کل</h3><p>مدیریت و توسعه‌ی سرور</p></div>
+    <div class="card rv"><div class="av">D</div><h3>توسعه‌دهنده</h3><p>اسکریپت و سیستم‌ها</p></div>
+    <div class="card rv"><div class="av">S</div><h3>سرپرست ادمین‌ها</h3><p>نظارت و پشتیبانی</p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="w" style="max-width:780px">
+  <div class="hd rv"><h2>سوالات و قوانین</h2></div>
+  <div class="rv">
+  <details><summary>برای ورود به سرور چه چیزی لازم است؟</summary><p>GTA:SA اورجینال، لانچر MTA و یک حساب کاربری در پنل UCP.</p></details>
+  <details><summary>قوانین اصلی سرور چیست؟</summary><p>رعایت رول‌پلی، احترام به دیگر بازیکنان و ممنوعیت هرگونه تقلب. متن کامل قوانین را اینجا بنویسید.</p></details>
+  <details><summary>چطور کاراکتر بسازم؟</summary><p>بعد از ورود به سرور، ثبت‌نام و ساخت کاراکتر را انجام دهید و مراحل معرفی شهر را دنبال کنید.</p></details>
+  <details><summary>رمز یا پین حسابم را فراموش کرده‌ام؟</summary><p>از بخش پین لاک یا پرتال پشتیبانی درخواست بازیابی ثبت کنید.</p></details>
+  <details><summary>مشکل فنی یا پینگ بالا دارم، چه کنم؟</summary><p>از صفحه‌ی وضعیت سرویس یا پرتال پشتیبانی کمک بگیرید.</p></details>
+  </div>
+</div></section>
+
+<section id="support"><div class="w">
+  <div class="hd rv"><h2>پشتیبانی</h2></div>
+  <div class="grid">
+    <a class="card rv" href="#" data-t="لینک پرتال را در فایل قرار دهید"><div class="ic">🎧</div><h3>پرتال و سامانه</h3><p>ثبت تیکت و پیگیری درخواست‌ها</p></a>
+    <a class="card rv" href="#" data-t="لینک خدمات را در فایل قرار دهید"><div class="ic">🏛️</div><h3>خدمات بازیکنان</h3><p>سامانه‌ی امور و خدمات بازیکنان</p></a>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="w"><div class="cnt rv"><h2>آماده‌ای برای ورود به شهر؟</h2><p>همین الان به رویال ام تی ای بپیوند.</p><a class="btn" href="#how">شروع بازی</a>
+<div class="soc"><a class="btn g" href="https://rubika.ir/Royal_MTA" target="_blank" rel="noopener noreferrer">روبیکا</a><a class="btn g" href="https://rubika.ir/Royal_RP_Vmp" target="_blank" rel="noopener noreferrer">روبیکای سرور وی ام پی</a><a class="btn g" href="#" data-t="به زودی">شاپ</a></div></div></div></section>
+</main>
+
+<footer><div class="w">© Royal MTA — تمامی حقوق محفوظ است</div></footer>
+
+<div class="md" id="login" role="dialog" aria-modal="true" aria-label="ورود به UCP"><div class="bx"><button class="x" data-close type="button" aria-label="بستن">×</button>
+  <h3>ورود به UCP</h3>
+  <input placeholder="نام کاربری" autocomplete="username"><input type="password" placeholder="رمز عبور" autocomplete="current-password">
+  <button class="btn" id="lg" type="button">ورود</button>
+</div></div>
+<div id="tt" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
